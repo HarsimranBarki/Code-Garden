@@ -9,7 +9,8 @@ html {
 
 body {
   box-sizing: inherit;
-  font-family: inherit; }
+  font-family: inherit;
+  overflow: hidden; }
 
 input, button, ::before, ::after {
   font-family: inherit; }
@@ -34,5 +35,17 @@ input, button, ::before, ::after {
     font-weight: 400; }
     .header__group-buttons:hover {
       background-color: #39CCCC; }
+    .header__group-buttons--active {
+      background-color: #01FF70; }
+
+.main__textarea {
+  width: 50%;
+  resize: none;
+  border-top: none;
+  border-bottom: none; }
+.main__iframe {
+  width: 50%;
+  height: 92.5vh;
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */

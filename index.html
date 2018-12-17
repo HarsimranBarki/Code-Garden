@@ -15,13 +15,20 @@
     <header class="header">
         <div class="header__logo">CodeGarden</div>
         <div class="header__group">
-            <button class="header__group-buttons" id="html">HTML</button>
+            <button class="header__group-buttons header__group-buttons--active" id="html">HTML</button>
             <button class="header__group-buttons" id="css">CSS</button>
             <button class="header__group-buttons" id="js">JavaScript</button>
-            <button class="header__group-buttons" id="output">Output</button>
+            <button class="header__group-buttons header__group-buttons--active" id="output">Output</button>
         </div>
     </header>
 
+    <main class="main">
+        <textarea name="html" class="main__textarea" id="main-html">Hello World</textarea>
+        <iframe class="main__iframe" id="main-output"></iframe>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

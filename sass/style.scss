@@ -12,6 +12,7 @@ html {
 body{
     box-sizing: inherit;
     font-family: inherit;
+    overflow: hidden;
 }
 
 input,button,::before,::after{
@@ -45,6 +46,25 @@ input,button,::before,::after{
             &:hover{
                 background-color: #39CCCC;
             }
+
+            &--active {
+                background-color: #01FF70;
+            }
         }
+    }
+}
+
+.main{
+    &__textarea{
+        width: 50%;
+        resize: none;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    &__iframe{
+        width: 50%;
+        height: 92.5vh;
+        border:none;
     }
 }
