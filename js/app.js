@@ -10,6 +10,8 @@ $('.header__group-buttons').click(function () {
     $('#main-' + panels).toggle();
 });
 
+$('.header__group-buttons--play').toggleClass('.header__group-buttons--play-active')
+
 
 $('.main__textarea').height($(window).height() - $('.header').height());
 $('#main-output').width(($(window).width() / 2) - 10);
@@ -27,4 +29,4 @@ $('.main__textarea').on('change keyup paste', function () {
 
 document.getElementById('runjs').addEventListener('click', function () {
     document.getElementById('main-output').contentWindow.eval($('#main-js').val());
-});
+})

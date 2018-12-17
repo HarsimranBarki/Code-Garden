@@ -5,18 +5,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto Slab', serif; }
 
 body {
   box-sizing: inherit;
   font-family: inherit;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 input, button, ::before, ::after {
   font-family: inherit; }
 
 .header {
-  background-color: #0074D9;
+  background-color: #111111;
   height: 5rem;
   color: #efefef;
   display: flex;
@@ -24,23 +24,25 @@ input, button, ::before, ::after {
   align-items: center; }
   .header__logo {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 300;
     cursor: pointer; }
   .header__group-buttons {
     border: none;
-    background-color: #7FDBFF;
+    background-color: #999;
     padding: .8rem 2rem;
     border-radius: 2px;
     cursor: pointer;
     font-weight: 400; }
+    .header__group-buttons:focus {
+      outline-color: #999; }
     .header__group-buttons:hover {
-      background-color: #39CCCC; }
+      background-color: #777; }
     .header__group-buttons--active {
-      background-color: #01FF70; }
+      background-color: #666; }
     .header__group-buttons--play {
-      background-color: #FF4136; }
+      background-color: #3498db; }
       .header__group-buttons--play:hover {
-        background-color: #85144b; }
+        background-color: #2980b9; }
 
 .main {
   display: grid;
@@ -51,11 +53,24 @@ input, button, ::before, ::after {
     border-top: none;
     border-bottom: none;
     border-left: none;
-    padding: 2rem .2rem; }
+    border-right-color: #2e2e2e;
+    padding: 2rem 2rem;
+    background-color: #191919;
+    font-size: 1.5rem;
+    color: #fff; }
+    .main__textarea:focus {
+      outline: none; }
     .main__textarea-hidden {
       display: none; }
   .main__iframe {
     height: 92.5vh;
-    border: none; }
+    border: none;
+    padding: 0 2rem; }
+
+navbar {
+  background: #111111;
+  height: 3rem;
+  width: 100%;
+  padding: 2rem 5rem; }
 
 /*# sourceMappingURL=style.css.map */
