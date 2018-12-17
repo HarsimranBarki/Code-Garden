@@ -1,3 +1,5 @@
+var textarea = document.getElementsByClassName('main__textarea');
+
 function updateOutput() {
     $('.main__iframe').contents().find("html").html('<html><head><style type="text/css">' + $('#main-css').val() + '</style></head><body>' +
         $('#main-html').val() + '</body></html>');
@@ -20,7 +22,13 @@ $(document).ready(function () {
     updateOutput();
 })
 
+// var checkInputs = function (event) {
+//     updateOutput();
+// };
 
+// textarea.addEventListener('paste', checkInputs, true);
+// textarea.addEventListener('keyup', checkInputs, true);
+// textarea.addEventListener('change', checkInputs, true);
 
 
 $('.main__textarea').on('change keyup paste', function () {
