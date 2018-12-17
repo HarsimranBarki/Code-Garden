@@ -37,22 +37,23 @@ input,button,::before,::after{
 
         &-buttons{
             border: none;
-            background-color: #999;
+            background-color: #666;
             padding: .8rem 2rem;
             border-radius: 2px;
             cursor: pointer;
             font-weight: 400;
+            color: #efefef;
 
             &:focus{
                 outline-color: #999;
             }
 
             &:hover{
-                background-color: #777;
+                background-color: #666;
             }
 
             &--active {
-                background-color: #666;
+                background-color: #444;
             }
             
             &--play{
@@ -98,9 +99,15 @@ input,button,::before,::after{
     }
 }
 
-navbar{
-    background: #111111;
-    height: 3rem;
-    width: 100%;
-    padding: 2rem 5rem;
+.navbar{
+    display: block;
+    background-color: #111111;
+    width: 100vw;
+    padding: 2rem 1rem;
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        color: #efefef;
+        cursor: default;
+    }
 }

@@ -28,17 +28,18 @@ input, button, ::before, ::after {
     cursor: pointer; }
   .header__group-buttons {
     border: none;
-    background-color: #999;
+    background-color: #666;
     padding: .8rem 2rem;
     border-radius: 2px;
     cursor: pointer;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #efefef; }
     .header__group-buttons:focus {
       outline-color: #999; }
     .header__group-buttons:hover {
-      background-color: #777; }
-    .header__group-buttons--active {
       background-color: #666; }
+    .header__group-buttons--active {
+      background-color: #444; }
     .header__group-buttons--play {
       background-color: #3498db; }
       .header__group-buttons--play:hover {
@@ -67,10 +68,15 @@ input, button, ::before, ::after {
     border: none;
     padding: 0 2rem; }
 
-navbar {
-  background: #111111;
-  height: 3rem;
-  width: 100%;
-  padding: 2rem 5rem; }
+.navbar {
+  display: block;
+  background-color: #111111;
+  width: 100vw;
+  padding: 2rem 1rem; }
+  .navbar p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #efefef;
+    cursor: default; }
 
 /*# sourceMappingURL=style.css.map */
