@@ -1,0 +1,22 @@
+{
+  "name": "codegarden",
+  "version": "1.0.0",
+  "description": "jsbin clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarsimranBarki/Code-Garden.git"
+  },
+  "author": "Harsimran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarsimranBarki/Code-Garden/issues"
+  },
+  "homepage": "https://github.com/HarsimranBarki/Code-Garden#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

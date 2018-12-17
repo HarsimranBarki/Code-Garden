@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+input,button,::before,::after{
+    font-family: inherit;
+}
+
+.header{
+    background-color: #0074D9;
+    height: 5rem;
+    color: #efefef;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__logo{
+        font-size: 2.5rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    &__group{
+
+        &-buttons{
+            border: none;
+            background-color: #7FDBFF;
+            padding: .8rem 2rem;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: 400;
+
+            &:hover{
+                background-color: #39CCCC;
+            }
+        }
+    }
+}
