@@ -10,6 +10,7 @@ $('#main-output').width(($(window).width() / 2) - 10);
 
 
 
-$('#main-html').on('change keyup paste', function () {
-    $('.main__iframe').contents().find("html").html($('#main-html').val());
+$('.main__textarea').on('change keyup paste', function () {
+    $('.main__iframe').contents().find("html").html('<html><head><style type="text/css">' + $('#main-css').val() + '</style></head><body>' +
+        $('#main-html').val() + '</body></html>');
 });
