@@ -37,6 +37,10 @@ input, button, ::before, ::after {
       background-color: #39CCCC; }
     .header__group-buttons--active {
       background-color: #01FF70; }
+    .header__group-buttons--play {
+      background-color: #FF4136; }
+      .header__group-buttons--play:hover {
+        background-color: #85144b; }
 
 .main {
   display: grid;

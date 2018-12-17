@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CodeGarden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
@@ -19,14 +21,16 @@
             <button class="header__group-buttons" id="css">CSS</button>
             <button class="header__group-buttons" id="js">JavaScript</button>
             <button class="header__group-buttons header__group-buttons--active" id="output">Output</button>
+            <button class="header__group-buttons header__group-buttons--play" id="runjs"><i class="fas fa-play"></i>
+                &nbsp; Run</button>
         </div>
     </header>
 
     <main class="main">
         <textarea name="html" class="main__textarea" id="main-html"> <h1>HTML</h1></textarea>
-        <textarea name="html" class="main__textarea main__textarea-hidden" id="main-css">h1{color:green;}
+        <textarea name="html" class="main__textarea main__textarea-hidden" id="main-css" spellcheck="false">h1{color:green;}
         </textarea>
-        <textarea name="html" class="main__textarea main__textarea-hidden" id="main-js">console.log('hello');</textarea>
+        <textarea name="html" class="main__textarea main__textarea-hidden" id="main-js" spellcheck="false">console.log('hello');</textarea>
         <iframe class="main__iframe" id="main-output"></iframe>
     </main>
 

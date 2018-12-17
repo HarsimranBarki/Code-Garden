@@ -50,6 +50,17 @@ input,button,::before,::after{
             &--active {
                 background-color: #01FF70;
             }
+            
+            &--play{
+                background-color: #FF4136;
+
+                &:hover{         
+                background-color: #85144b;
+                }
+            }
+
+
+    
         }
     }
 }
