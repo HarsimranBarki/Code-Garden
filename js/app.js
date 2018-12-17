@@ -1,5 +1,8 @@
 $('.header__group-buttons').click(function () {
     $(this).toggleClass('header__group-buttons--active');
+    var panels = $(this).attr('id');
+    $('#main-' + panels).toggle();
+
 });
 
 $('.main__textarea').height($(window).height() - $('.header').height());
